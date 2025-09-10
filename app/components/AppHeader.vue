@@ -6,9 +6,9 @@
 
       <!-- Navigation -->
       <nav class="space-x-6">
-        <a href="/" class="hover:underline">Accueil</a>
-        <a href="/projets" class="hover:underline">Projets</a>
-        <a href="/contact" class="hover:underline">Contact</a>
+        <NuxtLink to="/" class="hover:underline">Accueil</NuxtLink>
+        <NuxtLink to="/projets" class="hover:underline">Projets</NuxtLink>
+        <NuxtLink to="/contact" class="hover:underline">Contact</NuxtLink>
       </nav>
     </div>
   </header>
