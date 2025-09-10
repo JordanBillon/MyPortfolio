@@ -1,5 +1,5 @@
 <template>
-  <header class="w-full bg-gradient-to-r from-purple-600 to-pink-500 text-white shadow-lg">
+  <header class="w-full bg-gradient-radial from-[#2f1491] to-[#030005] text-white shadow-lg">
     <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
       <!-- Logo -->
       <h1 class="text-2xl font-bold drop-shadow">🚀 Mon Portfolio</h1>
