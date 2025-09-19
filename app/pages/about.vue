@@ -4,7 +4,7 @@
       Hello depuis Nuxt 4 👋
     </h1>
     <p class="text-lg text-white bg-black/30 px-4 py-2 rounded-lg shadow">
-      ICI tout nos contacts
+      Me voici 
     </p>
   </div>
 </template>
