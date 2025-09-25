@@ -1,0 +1,33 @@
+<template>
+  <div class="relative min-h-[calc(100vh-80px)] flex flex-col items-center justify-start py-16 bg-gradient-radial from-[#2f1491] to-[#030005]">
+    
+    <!-- Image de fond -->
+    <img 
+      src="~/assets/images/projet-image.png"
+      alt="Fond tech" 
+      class="absolute inset-0 w-full h-full object-cover opacity-15 z-10"
+    />
+
+    <!-- Contenu -->
+    <h1 class="text-5xl font-bold text-white mb-32 mt-24 text-center relative z-10">
+      Mes Projets
+    </h1>
+
+    <div class="flex items-center justify-center gap-[200px] relative z-10">
+      <NuxtLink to="/projets/completed">
+        <img 
+          src="~/assets/images/completed.png" 
+          alt="Projets terminés" 
+          class="w-[300px] h-[300px] object-cover transition-transform duration-300 hover:scale-110 rounded-lg cursor-pointer" 
+        />
+      </NuxtLink>
+      <NuxtLink to="/projets/work-in-progress">
+        <img 
+          src="~/assets/images/wip2.png" 
+          alt="Projets en cours" 
+          class="w-[220px] h-[260px] object-cover transition-transform duration-300 hover:scale-110 rounded-lg cursor-pointer" 
+        />
+      </NuxtLink>
+    </div>
+  </div>
+</template>

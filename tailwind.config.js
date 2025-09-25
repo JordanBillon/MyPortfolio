@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "./app/**/*.{vue,js,ts}",  // Nuxt 4 -> scanne tous les fichiers dans app/
+    "./app/**/*.{vue,js,ts}", // Nuxt 4 -> scanne tous les fichiers dans app/
   ],
   theme: {
     extend: {
@@ -12,7 +12,16 @@ export default {
       fontFamily: {
         sans: ['Poppins'],
         roboto: ['Roboto'],
-        abril: ['Abril Fatface']
+        abril: ['Abril Fatface'],
+      },
+      keyframes: {
+        gradient: {
+          '0%, 100%': { 'background-position': '0% 50%' },
+          '50%': { 'background-position': '100% 50%' },
+        },
+      },
+      animation: {
+        gradient: 'gradient 6s ease infinite',
       },
     },
   },
