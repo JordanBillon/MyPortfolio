@@ -12,7 +12,7 @@ const route = useRoute()
       <img src="~/assets/images/logo.png" alt="Logo JB" class="h-15 w-15" />
       
       <h2 class="flex items-center text-2xl font-bold drop-shadow space-x-32">
-        Jordan Billon Developper web Full Stack
+        Jordan Billon Concepteur Developpeur web Full Stack
       </h2>
 
       <!-- Navigation -->

@@ -33,7 +33,7 @@
             <span class="px-2 py-1 text-xs rounded-full bg-pink-500/20 text-pink-300">Local</span>
             <span class="px-2 py-1 text-xs rounded-full bg-pink-500/20 text-pink-300">Vitrine</span>
           </div>
-          <a href="https://odouceurdejulie.com" target="_blank" class="bg-pink-500 hover:bg-pink-600 px-4 py-2 rounded-lg text-sm font-semibold">
+          <a href="https://odouceurdejulie.fr" target="_blank" class="bg-pink-500 hover:bg-pink-600 px-4 py-2 rounded-lg text-sm font-semibold">
             Voir le site
           </a>
         </div>
