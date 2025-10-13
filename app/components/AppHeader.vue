@@ -36,7 +36,7 @@ onBeforeUnmount(() => {
     <header class="w-full h-[120px] bg-gradient-radial from-[#2f1491] to-[#030005] text-white shadow-lg">
     <div class="mx-auto flex items-center justify-around h-full px-4">
       <!-- Logo -->
-      <img src="~/assets/images/logo.png" alt="Logo JB" class="h-15 w-15" />
+      <img src="~/assets/images/logo.png" alt="Logo JB" class="h-[90px] w-[100px] md:h-[113px] md:w-[126px]" />
 
       <h2 class="hidden xl:flex items-center text-xl 2xl:text-2xl font-bold drop-shadow">
         Jordan Billon Concepteur Développeur Web Full Stack
