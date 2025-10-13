@@ -43,7 +43,7 @@ onBeforeUnmount(() => {
       </h2>
 
       <!-- NAV DESKTOP (>= lg) : on garde ton logic d'active via route -->
-      <nav class="hidden lg:flex items-center space-x-12">
+      <nav class="hidden md:flex items-center space-x-12">
         <NuxtLink 
           to="/"
           :class="[
@@ -80,7 +80,7 @@ onBeforeUnmount(() => {
       <!-- BOUTON HAMBURGER (mobile/tablette) -->
       <button
         id="menu-button"
-        class="lg:hidden inline-flex items-center justify-center w-10 h-10 focus:outline-none"
+        class="md:hidden inline-flex items-center justify-center w-10 h-10 focus:outline-none"
         @click.stop="toggleMenu"
         aria-label="Ouvrir le menu"
         :aria-expanded="isMenuOpen"

@@ -1,5 +1,5 @@
 <template>
-  <div class="relative min-h-[calc(100vh-80px)] flex flex-col items-center justify-start py-16 bg-gradient-radial from-[#2f1491] to-[#030005]">
+  <div class="relative min-h-[calc(100vh-220px)] md:min-h-[calc(100vh-180px)] flex flex-col items-center justify-start py-16 bg-gradient-radial from-[#2f1491] to-[#030005]">
     
     <!-- Image de fond -->
     <img 
@@ -9,23 +9,30 @@
     />
 
     <!-- Contenu -->
-    <h1 class="text-5xl font-bold text-white mb-32 mt-24 text-center relative z-10">
+    <h1 class="font-bold text-white mt-12 md:mt-20 lg:mt-24 mb-16 md:mb-24 lg:mb-32 text-center relative z-10
+              text-[1.8rem] sm:text-[2rem] md:text-[2.2rem] lg:text-[2.4rem] xl:text-[2.6rem]">
       Mes Projets
     </h1>
 
-    <div class="flex items-center justify-center gap-[200px] relative z-10">
+    <div
+      class="flex flex-col md:flex-row items-center justify-center 
+            gap-16 md:gap-[200px] relative z-10"
+    >
       <NuxtLink to="/projets/completed">
         <img 
           src="~/assets/images/completed.png" 
           alt="Projets terminés" 
-          class="w-[300px] h-[300px] object-cover transition-transform duration-300 hover:scale-110 rounded-lg cursor-pointer" 
+          class="w-[220px] h-[220px] md:w-[260px] md:h-[260px] lg:w-[280px] lg:h-[280px] xl:w-[300px] xl:h-[300px]
+                object-cover transition-transform duration-300 hover:scale-110 rounded-lg cursor-pointer" 
         />
       </NuxtLink>
+
       <NuxtLink to="/projets/work-in-progress">
         <img 
           src="~/assets/images/wip2.png" 
           alt="Projets en cours" 
-          class="w-[220px] h-[260px] object-cover transition-transform duration-300 hover:scale-110 rounded-lg cursor-pointer" 
+          class="w-[180px] h-[210px] md:w-[200px] md:h-[230px] lg:w-[220px] lg:h-[250px] xl:w-[220px] xl:h-[260px]
+                object-cover transition-transform duration-300 hover:scale-110 rounded-lg cursor-pointer" 
         />
       </NuxtLink>
     </div>
