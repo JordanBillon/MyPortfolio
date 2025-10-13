@@ -32,8 +32,8 @@
       </div>
     </section>
 
-    <!-- Séparateur haut -->
-    <div class="w-full h-2 bg-gradient-animated skew-y-3"></div>
+    <!-- Séparateur haut 
+    <div class="w-full h-2 bg-gradient-animated skew-y-3"></div>-->
 
     <!-- PROJETS PREVIEW -->
     <section id="projets" class="relative z-10 mx-auto pb-32 pt-32 -mt-16 -mb-16 text-center" style="clip-path: polygon(0 0, 100% 18%, 100% 82%, 0 100%);">
@@ -84,8 +84,8 @@
       </div>
     </section>
 
-    <!-- Séparateur bas -->
-    <div class="w-full h-2 bg-gradient-animated-reverse -skew-y-3 mb--3"></div>
+    <!-- Séparateur bas 
+    <div class="w-full h-2 bg-gradient-animated-reverse -skew-y-3 mb--3"></div>-->
 
     <!-- ABOUT PREVIEW -->
     <section id="about" class="relative z-10 mx-auto pb-16 pt-32 px-6 -mt-16 text-center" style="clip-path: polygon(0 35%, 100% 0%, 100% 100%, 0 100%);">
