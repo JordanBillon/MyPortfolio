@@ -1,7 +1,7 @@
 <template>
   <div class="bg-gradient-radial from-[#2f1491] to-[#030005] min-h-screen relative">
     <!-- INTRO ET CONTACT PREVIEW -->
-    <section id="contact" class="relative z-10 mx-auto pt-24 pb-32 px-6 -mb-14 text-center" style="clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);">
+    <section id="contact" class="relative z-10 mx-auto pt-24 pb-60 px-6 -mb-14 text-center" style="clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);">
       <img 
         src="~/assets/images/bg-contact.png"
         alt="Fond tech" 
@@ -10,14 +10,11 @@
       
       <div class="relative z-20">   
         <h2 class="text-[1.4rem] sm:text-[1.6rem] md:text-[1.8rem] lg:text-[2rem] xl:text-[2.25rem] font-bold text-white pb-12">Bienvenue sur mon espace personnel.</h2>
-        <div class="inline-block mx-auto max-w-4xl bg-white/10 backdrop-blur-md rounded-2xl px-4 sm:px-8 md:px-10 py-6 sm:py-8 md:py-10 shadow-lg mb-8 md:mb-12 xl:mb-16  border border-white/10">
+        <div class="inline-block mx-auto max-w-4xl bg-white/10 backdrop-blur-md rounded-2xl px-4 sm:px-8 md:px-10 py-6 sm:py-8 md:py-10 shadow-lg mb-16 md:mb-20 xl:mb-24  border border-white/10">
           <p class="text-gray-100 leading-relaxed sm:leading-loose text-[0.90rem] sm:text-base md:text-lg">
-            Ancien fusilier commando de l’air, j’ai acquis discipline, rigueur et esprit d’équipe.
-            Ces valeurs m’accompagnent aujourd’hui dans ma reconversion en développement web,
-            où je mets mon énergie et ma créativité au service de projets digitaux ambitieux.<br><br>
-            Ancien fusilier commando de l’air, j’ai acquis discipline, rigueur et esprit d’équipe.
-            Ces valeurs m’accompagnent aujourd’hui dans ma reconversion en développement web,
-            où je mets mon énergie et ma créativité au service de projets digitaux ambitieux.
+            Vous trouverez ici mes projets terminés, ceux en cours de construction, et un aperçu de qui je suis ainsi que de mon parcours.<br><br>
+            Le site évoluera régulièrement au fil de mes idées et de mes nouvelles réalisations.
+            C’est une vitrine de mon travail, de mon évolution et de la passion que je mets dans chaque réalisation.
           </p>
       </div>  
 
@@ -27,7 +24,9 @@
         </p>   -->
         <h2 class="text-[1.2rem] sm:text-[1.4rem] md:text-[1.6rem] lg:text-[1.8rem] xl:text-[2rem] font-bold mb-6 text-white">Un projet en tête ? Vous êtes une entreprise ?</h2><br>
         <p class="text-gray-300 mb-16 text-[0.90rem] sm:text-base md:text-lg">
-          N'hésitez pas à me contacter pour discuter de vos idées ou projets.
+          Disponible dès maintenant, je suis à la recherche d’opportunités dans la région toulousaine.<br><br>
+          Mon profil full stack me permet d’intervenir aussi bien sur le front-end (HTML, VueJS, TailwindCSS) que sur le back-end (Symfony PHP).<br><br>
+          Je serais ravi d’échanger autour de vos besoins ou projets web.
         </p>
         <NuxtLink
           to="/contact"
@@ -38,11 +37,11 @@
       </div>
     </section>
 
-    <!-- Séparateur haut 
-    <div class="w-full h-2 bg-gradient-animated skew-y-3"></div>-->
+    <!-- Séparateur haut -->
+    <div class="w-full h-2 bg-gradient-animated skew-y-3"></div>
 
     <!-- PROJETS PREVIEW -->
-    <section id="projets" class="relative z-10 mx-auto pb-32 pt-32 -mt-16 -mb-16 text-center" style="clip-path: polygon(0 0, 100% 18%, 100% 82%, 0 100%);">
+    <section id="projets" class="relative z-10 mx-auto pb-40 pt-40 -mt-16 -mb-16 text-center" style="clip-path: polygon(0 0, 100% 18%, 100% 82%, 0 100%);">
       <img 
         src="~/assets/images/projet-image.png"
         alt="Fond tech" 
@@ -90,13 +89,13 @@
       </div>
     </section>
 
-    <!-- Séparateur bas 
-    <div class="w-full h-2 bg-gradient-animated-reverse -skew-y-3 mb--3"></div>-->
+    <!-- Séparateur bas -->
+    <div class="w-full h-2 bg-gradient-animated-reverse -skew-y-3 mb--3"></div>
 
     <!-- ABOUT PREVIEW -->
-    <section id="about" class="relative z-10 mx-auto pb-16 pt-32 px-6 -mt-16 text-center" style="clip-path: polygon(0 35%, 100% 0%, 100% 100%, 0 100%);">
+    <section id="about" class="relative z-10 mx-auto pb-20 pt-40 px-6 -mt-16 text-center" style="clip-path: polygon(0 35%, 100% 0%, 100% 100%, 0 100%);">
       <img 
-        src="~/assets/images/bg-contact.png"
+        src="~/assets/images/bureau.png"
         alt="Fond tech" 
         class="absolute inset-0 w-full h-full object-cover opacity-15 pointer-events-none"
       />
