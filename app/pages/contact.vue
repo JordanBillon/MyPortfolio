@@ -13,7 +13,7 @@
     <!-- Bloc principal contact -->
     <div class="relative z-10 max-w-3xl w-full text-center mb-24">
       <h1
-        class="font-bold mb-6 text-[1.6rem] sm:text-[1.8rem] md:text-[2rem] lg:text-[2.2rem] xl:text-[2.4rem]"
+        class="font-bold mb-6 text-[1.4rem] sm:text-[1.6rem] md:text-[1.8rem] lg:text-[2rem] xl:text-[2.2rem]"
       >
         📬 Contactez-moi
       </h1>
@@ -61,7 +61,7 @@
     <!-- Bloc réseaux -->
     <div class="relative z-10 max-w-3xl w-full text-center mb-12">
       <h1
-        class="font-bold mb-6 text-[1.6rem] sm:text-[1.8rem] md:text-[2rem] lg:text-[2.2rem] xl:text-[2.4rem]"
+        class="font-bold mb-6 text-[1.4rem] sm:text-[1.6rem] md:text-[1.8rem] lg:text-[2rem] xl:text-[2.2rem]"
       >
         Pour suivre l'avancée de mes projets, n'hésitez pas à me suivre !
       </h1>

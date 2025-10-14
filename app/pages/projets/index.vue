@@ -10,7 +10,7 @@
 
     <!-- Contenu -->
     <h1 class="font-bold text-white mt-12 md:mt-20 lg:mt-24 mb-16 md:mb-24 lg:mb-32 text-center relative z-10
-              text-[1.8rem] sm:text-[2rem] md:text-[2.2rem] lg:text-[2.4rem] xl:text-[2.6rem]">
+              text-[1.6rem] sm:text-[1.8rem] md:text-[2rem] lg:text-[2.2rem] xl:text-[2.4rem]">
       Mes Projets
     </h1>
 

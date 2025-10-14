@@ -10,7 +10,7 @@
     <!-- PRESENTATION -->
     <section class="relative z-10 py-12 sm:py-16 px-6 text-center">
       <div class="inline-block mx-auto max-w-4xl bg-white/10 backdrop-blur-md rounded-2xl px-4 sm:px-8 md:px-10 py-6 sm:py-8 md:py-10 shadow-lg border border-white/10">
-        <h2 class="font-bold mb-8 sm:mb-10 md:mb-12 text-[1.6rem] sm:text-[1.8rem] md:text-[2rem] lg:text-[2.2rem] xl:text-[2.4rem]">
+        <h2 class="font-bold mb-8 sm:mb-10 md:mb-12 text-[1.4rem] sm:text-[1.6rem] md:text-[1.8rem] lg:text-[2rem] xl:text-[2.2rem]">
           Qui suis-je ?
         </h2>
         <p class="text-gray-100 leading-relaxed sm:leading-loose text-[0.95rem] sm:text-base md:text-lg">
@@ -26,7 +26,7 @@
 
     <!-- COMPÉTENCES -->
     <section class="relative z-10 pt-8 pb-16 px-6 text-center">
-      <h2 class="font-bold mb-10 text-[1.6rem] sm:text-[1.8rem] md:text-[2rem] lg:text-[2.2rem] xl:text-[2.4rem]">
+      <h2 class="font-bold mb-10 text-[1.4rem] sm:text-[1.6rem] md:text-[1.8rem] lg:text-[2rem] xl:text-[2.2rem]">
         Mes Compétences
       </h2>
 
