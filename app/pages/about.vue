@@ -14,10 +14,10 @@
           Qui suis-je ?
         </h2>
         <p class="text-gray-100 leading-relaxed sm:leading-loose text-[0.95rem] sm:text-base md:text-lg">
-          Si tu lis ca loick t'es un PD, j’ai acquis discipline, rigueur et esprit d’équipe.
+           j’ai acquis discipline, rigueur et esprit d’équipe.
           Ces valeurs m’accompagnent aujourd’hui dans ma reconversion en développement web,
           où je mets mon énergie et ma créativité au service de projets digitaux ambitieux.<br><br>
-          Si tu lis ca loick t'es un PD, j’ai acquis discipline, rigueur et esprit d’équipe.
+           j’ai acquis discipline, rigueur et esprit d’équipe.
           Ces valeurs m’accompagnent aujourd’hui dans ma reconversion en développement web,
           où je mets mon énergie et ma créativité au service de projets digitaux ambitieux.
         </p>
