@@ -20,7 +20,7 @@ const projects = [
       "Mise en avant web pour une entreprise de peinture intérieure & extérieure. Site vitrine optimisé SEO.",
     imgSrc: jujupeinturt,
     imgAlt: "Juju Peint'Urt",
-    href: "https://jujupeinture.com",
+    href: "https://jujupeinturt.fr",
     tags: [{ label: "SEO" }, { label: "Local" }, { label: "Vitrine" }],
     offline: false,
   },
