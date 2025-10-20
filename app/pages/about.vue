@@ -30,9 +30,9 @@
           <div class="flex justify-center my-8">
           
             <img 
-              src="~/assets/images/diplome2.jpg" 
+              src="~/assets/images/diplome.png" 
               alt="Diplôme" 
-              class="w-40 h-auto opacity-90 hover:scale-105 transition-transform duration-300 cursor-pointer"
+              class="w-20 md:w-28 h-auto opacity-90"
               @click="showDiploma = true"
             />
 
@@ -139,29 +139,6 @@
 
       </div>
     </section>
-
-    <!-- MODAL DIPLÔME -->
-    <transition name="fade">
-      <div 
-        v-if="showDiploma" 
-        class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm"
-        @click.self="showDiploma = false"
-      >
-        <div class="relative">
-          <img 
-            src="~/assets/images/diplome2.jpg" 
-            alt="Diplôme en grand" 
-            class="max-w-full max-h-[90vh] rounded-xl shadow-2xl"
-          />
-          <button 
-            @click="showDiploma = false"
-            class="absolute top-2 right-2 bg-white/20 hover:bg-white/40 text-white rounded-full p-2"
-          >
-            ✕
-          </button>
-        </div>
-      </div>
-    </transition>
   </div>
 </template>
 
@@ -185,10 +162,6 @@ import gitIcon from '~/assets/images/git.png'
 import dockerIcon from '~/assets/images/docker.png'
 import cypressIcon from '~/assets/images/cypress.png'
 import postmanIcon from '~/assets/images/postman.png'
-
-import { ref } from 'vue'
-
-const showDiploma = ref(false)
 
 const frontTechs = [
   { name: "HTML5", icon: htmlIcon },
