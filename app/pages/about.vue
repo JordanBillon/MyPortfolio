@@ -14,13 +14,43 @@
           Qui suis-je ?
         </h2>
         <p class="text-gray-100 leading-relaxed sm:leading-loose text-[0.95rem] sm:text-base md:text-lg">
-           j’ai acquis discipline, rigueur et esprit d’équipe.
-          Ces valeurs m’accompagnent aujourd’hui dans ma reconversion en développement web,
-          où je mets mon énergie et ma créativité au service de projets digitaux ambitieux.<br><br>
-           j’ai acquis discipline, rigueur et esprit d’équipe.
-          Ces valeurs m’accompagnent aujourd’hui dans ma reconversion en développement web,
-          où je mets mon énergie et ma créativité au service de projets digitaux ambitieux.
-        </p>
+           Ancien militaire dans les commandos de l’air, j’ai construit mon parcours autour de la rigueur, du dépassement de soi et du travail en équipe.<br>
+          Ces valeurs m’accompagnent aujourd’hui dans le développement web, où je mets la même exigence et la même discipline au service de projets numériques ambitieux.</p>
+
+          <div class="flex justify-center my-8">
+            <img 
+              src="~/assets/images/beret.png" 
+              alt="Logo musique" 
+              class="w-20 md:w-24 h-auto opacity-90"
+            />
+          </div> 
+
+          <p class="text-gray-100 leading-relaxed sm:leading-loose text-[0.95rem] sm:text-base md:text-lg">Après deux formations à l’école ADRAR Formation – une première en Développement Web et Mobile (niveau 5), suivie d’une en Conception et Développement d’Applications (niveau 6) – j’ai acquis une solide expérience sur l’ensemble du cycle de création d’un projet : front-end, back-end et architecture applicative.</p>
+
+          <div class="flex justify-center my-8">
+          
+            <img 
+              src="~/assets/images/diplome2.jpg" 
+              alt="Diplôme" 
+              class="w-40 h-auto opacity-90 hover:scale-105 transition-transform duration-300 cursor-pointer"
+              @click="showDiploma = true"
+            />
+
+          </div> 
+
+          <p class="text-gray-100 leading-relaxed sm:leading-loose text-[0.95rem] sm:text-base md:text-lg">Curieux et passionné, j’aime autant concevoir des interfaces élégantes que résoudre des problématiques techniques complexes.
+          En parallèle, la musique occupe une place importante dans ma vie : je pratique la guitare et le piano, deux instruments qui développent, comme le code, la créativité et la précision.</p>
+
+        <div class="flex justify-center my-8">
+          <img 
+            src="~/assets/images/musique.png" 
+            alt="Logo musique" 
+            class="w-40 h-auto opacity-90"
+          />
+        </div>  
+
+        <!--<p class="text-gray-100 leading-relaxed sm:leading-loose text-[0.95rem] sm:text-base md:text-lg">Aujourd’hui, je suis à la recherche d’opportunités dans la région toulousaine, au sein d’une entreprise où je pourrais mettre à profit mes compétences techniques et mes qualités humaines pour contribuer à des projets innovants et exigeants.
+        </p>-->
       </div>
     </section>
 
@@ -110,6 +140,28 @@
       </div>
     </section>
 
+    <!-- MODAL DIPLÔME -->
+    <transition name="fade">
+      <div 
+        v-if="showDiploma" 
+        class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm"
+        @click.self="showDiploma = false"
+      >
+        <div class="relative">
+          <img 
+            src="~/assets/images/diplome2.jpg" 
+            alt="Diplôme en grand" 
+            class="max-w-full max-h-[90vh] rounded-xl shadow-2xl"
+          />
+          <button 
+            @click="showDiploma = false"
+            class="absolute top-2 right-2 bg-white/20 hover:bg-white/40 text-white rounded-full p-2"
+          >
+            ✕
+          </button>
+        </div>
+      </div>
+    </transition>
   </div>
 </template>
 
@@ -133,6 +185,10 @@ import gitIcon from '~/assets/images/git.png'
 import dockerIcon from '~/assets/images/docker.png'
 import cypressIcon from '~/assets/images/cypress.png'
 import postmanIcon from '~/assets/images/postman.png'
+
+import { ref } from 'vue'
+
+const showDiploma = ref(false)
 
 const frontTechs = [
   { name: "HTML5", icon: htmlIcon },
