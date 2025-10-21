@@ -24,7 +24,10 @@ export default defineNuxtConfig({
       link: [
         // favicon principal (format PNG moderne)
         { rel: 'icon', type: 'image/png', href: '/favicon.png' }
-      ]
+      ],
+      htmlAttrs: {
+        lang: 'fr'
+      }
     }
   }
 })
