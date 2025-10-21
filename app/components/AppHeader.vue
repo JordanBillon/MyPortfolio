@@ -103,7 +103,6 @@ onBeforeUnmount(() => {
       class="fixed top-0 left-0 h-full w-72 max-w-[85vw] bg-gradient-radial text-center from-[#2f1491] to-[#030005] text-white z-50 transform transition-transform duration-300 shadow-xl"
       :class="isMenuOpen ? 'translate-x-0' : '-translate-x-full'"
       role="complementary"
-      aria-modal="true"
       aria-label="Menu latéral de navigation"
     >
       <!-- Header du drawer -->
