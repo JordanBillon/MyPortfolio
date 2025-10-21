@@ -24,6 +24,8 @@
             src="/images/beret.png"
             alt="Logo musique"
             class="w-20 md:w-24 h-auto opacity-90"
+            fetchpriority="high"
+            loading="eager"
           />
         </div>
 

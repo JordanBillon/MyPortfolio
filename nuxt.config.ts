@@ -21,6 +21,7 @@ export default defineNuxtConfig({
       { name: 'Roboto', provider: 'google', weights: [400, 700] },
       { name: 'Abril Fatface', provider: 'google', weights: [400, 700] } 
     ],
+    
     // Optimisations pour les fonts
     defaults: {
       weights: [400, 700],
@@ -38,10 +39,6 @@ export default defineNuxtConfig({
       link: [
         // favicon
         { rel: 'icon', type: 'image/png', href: '/favicon.png' },
-        
-        // Preconnect pour Google Fonts (géré par @nuxt/fonts mais on peut forcer)
-        { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
-        { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: 'anonymous' }
       ],
       htmlAttrs: {
         lang: 'fr'

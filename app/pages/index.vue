@@ -119,7 +119,7 @@ useHead({
         >
           En savoir plus →
         </NuxtLink>
-      </div>
+     </div>
     </section>
   </div>
 </template>

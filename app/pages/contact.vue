@@ -22,6 +22,8 @@ useHead({
       src="/images/bg-contact.png"
       alt="Fond tech" 
       class="absolute inset-0 w-full h-full object-cover opacity-20"
+      fetchpriority="high"
+      loading="eager"
     />
 
     <!-- Bloc principal contact -->

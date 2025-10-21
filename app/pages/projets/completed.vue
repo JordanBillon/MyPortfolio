@@ -50,6 +50,8 @@ const projects = [
       src="/images/projet-image.png"
       alt="Fond tech"
       class="absolute inset-0 w-full h-full object-cover opacity-15 z-0"
+      fetchpriority="high"
+      loading="eager"
     />
 
     <div class="relative z-10">
