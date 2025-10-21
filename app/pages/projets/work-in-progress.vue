@@ -1,3 +1,17 @@
+<script setup>
+useHead({
+  title: 'Mes Projets en cours | Portfolio Développeur Web Full Stack',
+  meta: [
+    {
+      name: 'description',
+      content:
+        "Explorez mes projets en cours ainsi que leur progression ."
+    }
+  ]
+})
+</script>
+
+
 <template>
   <div class="relative min-h-screen bg-gradient-radial from-[#2f1491] to-[#030005] text-white py-20 px-6">
     <!-- Image de fond -->
@@ -12,3 +26,5 @@
     </p>
   </div>
 </template>
+
+

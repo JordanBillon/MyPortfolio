@@ -1,3 +1,17 @@
+<script setup>
+useHead({
+  title: 'Mes Projets | Portfolio Développeur Web Full Stack',
+  meta: [
+    {
+      name: 'description',
+      content:
+        "Explorez mes projets en cours ou terminés : sites vitrines, applications et jeux navigateurs."
+    }
+  ]
+})
+</script>
+
+
 <template>
   <div class="relative min-h-[calc(100vh-220px)] md:min-h-[calc(100vh-180px)] flex flex-col items-center justify-start py-16 bg-gradient-radial from-[#2f1491] to-[#030005]">
     

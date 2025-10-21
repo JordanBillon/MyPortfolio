@@ -1,4 +1,14 @@
-<script setup lang="ts">
+<script setup>
+useHead({
+  title: 'Mes Projets terminés | Portfolio Développeur Web Full Stack',
+  meta: [
+    {
+      name: 'description',
+      content:
+        "Explorez mes projets terminés : sites webs, blog,  optimisation SEO."
+    }
+  ]
+})
 
 const projects = [
   {

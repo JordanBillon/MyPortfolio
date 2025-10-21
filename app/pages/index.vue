@@ -1,3 +1,17 @@
+<script setup>
+useHead({
+  title: 'Accueil | Mon Portfolio – Développeur Web Full Stack à Toulouse',
+  meta: [
+    {
+      name: 'description',
+      content:
+        "Bienvenue sur mon portfolio ! Découvrez mes projets web, mes compétences ainsi que mon parcours ."
+    }
+  ]
+})
+</script>
+
+
 <template>
   <div class="bg-gradient-radial from-[#2f1491] to-[#030005] min-h-screen relative">
 

@@ -1,3 +1,17 @@
+<script setup>
+useHead({
+  title: 'Contact | Travaillons ensemble – Développeur Web à Toulouse',
+  meta: [
+    {
+      name: 'description',
+      content:
+        "Besoin d’un site web ou d’un développeur full stack à Toulouse ? Contactez-moi pour échanger sur vos projets et vos besoins numériques."
+    }
+  ]
+})
+</script>
+
+
 <template>
   <section
     class="relative min-h-[calc(100vh-80px)] flex flex-col items-center justify-center 

@@ -142,6 +142,19 @@
 </template>
 
 <script setup>
+//META
+useHead({
+  title: 'À propos | Développeur Web Full Stack à Toulouse',
+  meta: [
+    {
+      name: 'description',
+      content:
+        "Découvrez mon parcours et qui je suis  : ancien militaire reconverti dans le développement, passionné par le code, la musique et la créativité."
+    }
+  ]
+})
+
+
 // FRONT-END
 const frontTechs = [
   { name: "HTML5", icon: "/images/html.png" },
