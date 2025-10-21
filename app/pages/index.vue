@@ -21,6 +21,8 @@ useHead({
         src="/images/bg-contact.png"
         alt="Fond tech"
         class="absolute inset-0 w-full h-full object-cover opacity-15 pointer-events-none"
+        fetchpriority="high"
+        loading="eager"
       />
       
       <div class="relative z-20">   
