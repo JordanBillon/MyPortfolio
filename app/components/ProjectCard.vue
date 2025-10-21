@@ -19,7 +19,7 @@ const props = defineProps<{
   >
     <!-- Image -->
     <div class="w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 lg:w-40 lg:h-40 rounded-full overflow-hidden mb-6 shadow-lg shadow-pink-500/40">
-      <img :src="imgSrc" :alt="title" class="w-full h-full object-cover" />
+      <NuxtImg :src="imgSrc" :alt="title" class="w-full h-full object-cover" />
     </div>
 
     <h2 class="text-lg sm:text-xl md:text-2xl font-semibold mb-2">{{ title }}</h2>

@@ -3,8 +3,12 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   modules: [
-    '@nuxtjs/tailwindcss' ,'@nuxt/fonts' 
+    '@nuxtjs/tailwindcss', '@nuxt/fonts', '@nuxt/image' 
   ],
+  image: {
+    formats: ['webp', 'avif'], 
+    quality: 80, // Compression
+  },
   css: ['~/assets/css/main.css'
   ],
   fonts: {

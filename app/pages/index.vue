@@ -3,9 +3,9 @@
 
     <!-- INTRO ET CONTACT PREVIEW -->
     <section id="contact" class="section-contact relative z-10 mx-auto pt-24 lg:pb-60 md:pb-40 pb-20 px-6 -mb-4 md:-mb-6 lg:-mb-10 2xl:-mb-14 text-center">
-      <img 
-        src="~/assets/images/bg-contact.png"
-        alt="Fond tech" 
+      <NuxtImg
+        src="/images/bg-contact.png"
+        alt="Fond tech"
         class="absolute inset-0 w-full h-full object-cover opacity-15 pointer-events-none"
       />
       
@@ -46,9 +46,9 @@
 
     <!-- PROJETS PREVIEW -->
     <section id="projets" class="section-projets relative z-10 mx-auto pb-40 pt-40 -mt-16 lg:-mb-16 -mb-8 text-center">
-      <img 
-        src="~/assets/images/projet-image.png"
-        alt="Fond tech" 
+      <NuxtImg
+        src="/images/projet-image.png"
+        alt="Fond tech"
         class="absolute inset-0 w-full h-full object-cover opacity-15 pointer-events-none"
       />
       
@@ -60,13 +60,13 @@
 
         <div class="flex flex-wrap justify-center gap-10 my-20">
           <div class="w-32 h-32 rounded-full overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300">
-            <img src="~/assets/images/jujupeinturt.png" alt="Juju Peint'Urt" class="w-full h-full object-cover" />
+            <NuxtImg src="/images/jujupeinturt.png" alt="Juju Peint'Urt" class="w-full h-full object-cover" />
           </div>
           <div class="w-32 h-32 rounded-full overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300">
-            <img src="~/assets/images/odouceurdejulie.png" alt="Ô Douceur de Julie" class="w-full h-full object-cover" />
+            <NuxtImg src="/images/odouceurdejulie.png" alt="Ô Douceur de Julie" class="w-full h-full object-cover" />
           </div>
           <div class="w-32 h-32 rounded-full overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300">
-            <img src="~/assets/images/calinsdanges.png" alt="Câlins d'Anges" class="w-full h-full object-cover" />
+            <NuxtImg src="/images/calinsdanges.png" alt="Câlins d'Anges" class="w-full h-full object-cover" />
           </div>
         </div>
 
@@ -84,9 +84,9 @@
 
     <!-- ABOUT PREVIEW -->
     <section id="about" class="section-about relative z-10 mx-auto pb-20 pt-40 px-6 2xl:-mt-10 lg:-mt-8 -mt-8 text-center">
-      <img 
-        src="~/assets/images/bureau.png"
-        alt="Fond tech" 
+      <NuxtImg
+        src="/images/bureau.png"
+        alt="Fond tech"
         class="absolute inset-0 w-full h-full object-cover opacity-15 pointer-events-none"
       />
       

@@ -4,8 +4,8 @@
            bg-gradient-radial from-[#2f1491] to-[#030005] text-white px-6 py-16"
   >
     <!-- Image de fond -->
-    <img 
-      src="~/assets/images/bg-contact.png"
+    <NuxtImg 
+      src="/images/bg-contact.png"
       alt="Fond tech" 
       class="absolute inset-0 w-full h-full object-cover opacity-20"
     />
@@ -35,7 +35,7 @@
                  hover:scale-105 hover:bg-white/20 transition-all duration-200 
                  w-full md:w-[360px] lg:w-[380px] max-w-[400px]"
         >
-          <img src="~/assets/images/phone.png" alt="Téléphone" class="w-12 h-12" />
+          <NuxtImg src="/images/phone.png" alt="Téléphone" class="w-12 h-12" />
           <div class="flex-1 flex flex-col items-center justify-center">
             <h2 class="text-lg md:text-xl font-semibold">Téléphone</h2>
             <p class="text-gray-300 text-sm md:text-base">+33 6 41 94 04 01</p>
@@ -49,7 +49,7 @@
                  hover:scale-105 hover:bg-white/20 transition-all duration-200 
                  w-full md:w-[360px] lg:w-[380px] max-w-[400px]"
         >
-          <img src="~/assets/images/mail.png" alt="Email" class="w-12 h-12" />
+          <NuxtImg src="/images/mail.png" alt="Email" class="w-12 h-12" />
           <div class="flex-1 flex flex-col items-center justify-center">
             <h2 class="text-lg md:text-xl font-semibold">Email</h2>
             <p class="text-gray-300 text-sm md:text-base">jordan-billon@hotmail.fr</p>
@@ -82,7 +82,7 @@
             class="flex items-center gap-4 bg-white/10 backdrop-blur-lg p-6 rounded-lg shadow-lg 
                    hover:scale-105 hover:bg-white/20 transition-all duration-200"
           >
-            <img src="~/assets/images/linkedin.png" alt="Logo LinkedIn" class="w-12 h-12" />
+            <NuxtImg src="/images/linkedin.png" alt="Logo LinkedIn" class="w-12 h-12" />
             <div class="flex-1 flex flex-col items-center justify-center">
               <h2 class="text-lg md:text-xl font-semibold">LinkedIn</h2>
               <p class="text-gray-300 text-sm md:text-base">linkedin.com/in/jordan-billon/</p>
@@ -98,7 +98,7 @@
             class="flex items-center gap-4 bg-white/10 backdrop-blur-lg p-6 rounded-lg shadow-lg 
                    hover:scale-105 hover:bg-white/20 transition-all duration-200"
           >
-            <img src="~/assets/images/github.png" alt="Logo GitHub" class="w-12 h-12"/>
+            <NuxtImg src="/images/github.png" alt="Logo GitHub" class="w-12 h-12"/>
             <div class="flex-1 flex flex-col items-center justify-center">
               <h2 class="text-lg md:text-xl font-semibold">GitHub</h2>
               <p class="text-gray-300 text-sm md:text-base">github.com/JordanBillon</p>
@@ -112,7 +112,7 @@
             class="flex items-center gap-4 bg-white/10 backdrop-blur-lg p-6 rounded-lg shadow-lg 
                    transition-all duration-200 opacity-70 cursor-not-allowed"
           >
-            <img src="~/assets/images/x.png" alt="Logo X" class="w-12 h-12" />
+            <NuxtImg src="/images/x.png" alt="Logo X" class="w-12 h-12" />
             <div class="flex-1 flex flex-col items-center justify-center">
               <h2 class="text-lg md:text-xl font-semibold text-center">X</h2>
               <p class="text-gray-400 italic text-sm md:text-base">Bientôt...</p>

@@ -1,14 +1,11 @@
 <script setup lang="ts">
-import odouceurdejulie from '~/assets/images/odouceurdejulie.png'
-import jujupeinturt from '~/assets/images/jujupeinturt.png'
-import calinsdanges from '~/assets/images/calinsdanges.png'
 
 const projects = [
   {
     title: "Ô Douceur de Julie",
     description:
       "Site vitrine pour des ateliers bien-être bébé. Optimisé SEO pour capter une audience locale qualifiée.",
-    imgSrc: odouceurdejulie,
+    imgSrc: "/images/odouceurdejulie.png",
     imgAlt: "Ô Douceur de Julie",
     href: "https://odouceurdejulie.fr",
     tags: [{ label: "SEO" }, { label: "Local" }, { label: "Vitrine" }],
@@ -18,7 +15,7 @@ const projects = [
     title: "Juju Peint'Urt",
     description:
       "Mise en avant web pour une entreprise de peinture intérieure & extérieure. Site vitrine optimisé SEO.",
-    imgSrc: jujupeinturt,
+    imgSrc: "/images/jujupeinturt.png",
     imgAlt: "Juju Peint'Urt",
     href: "https://jujupeinturt.fr",
     tags: [{ label: "SEO" }, { label: "Local" }, { label: "Vitrine" }],
@@ -28,7 +25,7 @@ const projects = [
     title: "Câlins d’Anges",
     description:
       "Entreprise de bien-être périnatal à Toulouse. Site optimisé SEO avec quiz & blog. (Actuellement hors ligne)",
-    imgSrc: calinsdanges,
+    imgSrc: "/images/calinsdanges.png",
     imgAlt: "Câlins d’Anges",
     href: undefined,
     tags: [{ label: "SEO" }, { label: "Blog" }, { label: "Quiz" }],
@@ -39,8 +36,8 @@ const projects = [
 
 <template>
   <div class="relative min-h-screen bg-gradient-to-b from-[#2f1491] to-[#030005] text-white py-20 px-6">
-    <img
-      src="~/assets/images/projet-image.png"
+    <NuxtImg
+      src="/images/projet-image.png"
       alt="Fond tech"
       class="absolute inset-0 w-full h-full object-cover opacity-15 z-0"
     />

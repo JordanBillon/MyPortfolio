@@ -1,8 +1,8 @@
 <template>
   <div class="relative min-h-screen bg-gradient-radial from-[#2f1491] to-[#030005] text-white py-20 px-6">
     <!-- Image de fond -->
-    <img 
-      src="~/assets/images/projet-image.png"
+    <NuxtImg 
+      src="/images/projet-image.png"
       alt="Fond tech" 
       class="absolute inset-0 w-full h-full object-cover opacity-15 z-0"
     />

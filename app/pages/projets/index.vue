@@ -2,8 +2,8 @@
   <div class="relative min-h-[calc(100vh-220px)] md:min-h-[calc(100vh-180px)] flex flex-col items-center justify-start py-16 bg-gradient-radial from-[#2f1491] to-[#030005]">
     
     <!-- Image de fond -->
-    <img 
-      src="~/assets/images/projet-image.png"
+    <NuxtImg 
+      src="/images/projet-image.png"
       alt="Fond tech" 
       class="absolute inset-0 w-full h-full object-cover opacity-15 z-10"
     />
@@ -19,8 +19,8 @@
             gap-16 md:gap-[200px] relative z-10"
     >
       <NuxtLink to="/projets/completed">
-        <img 
-          src="~/assets/images/completed.png" 
+        <NuxtImg 
+          src="/images/completed.png" 
           alt="Projets terminés" 
           class="w-[220px] h-[220px] md:w-[260px] md:h-[260px] lg:w-[280px] lg:h-[280px] xl:w-[300px] xl:h-[300px]
                 object-cover transition-transform duration-300 hover:scale-110 rounded-lg cursor-pointer" 
@@ -28,8 +28,8 @@
       </NuxtLink>
 
       <NuxtLink to="/projets/work-in-progress">
-        <img 
-          src="~/assets/images/wip2.png" 
+        <NuxtImg 
+          src="/images/wip2.png" 
           alt="Projets en cours" 
           class="w-[180px] h-[210px] md:w-[200px] md:h-[230px] lg:w-[220px] lg:h-[250px] xl:w-[220px] xl:h-[260px]
                 object-cover transition-transform duration-300 hover:scale-110 rounded-lg cursor-pointer" 
