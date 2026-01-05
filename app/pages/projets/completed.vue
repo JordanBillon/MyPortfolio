@@ -70,8 +70,7 @@ const projects = [
         />
       </div>
 
-      <p class="text-center text-[1rem] md:text-[1.1rem] lg:text-[1.2rem] xl:text-[1.3rem] m-12 max-w-2xl mx-auto">Malheuresement, les Entreprises <strong>Calins d'anges et oDouceurDeJulie</strong>, qui étaient dans le meme secteur ( le bien être des nouveaux nées), ont du cessé leurs activités pour des raisons qui les regardent.
-        J'ai des projets qui vont bientot démarrer afin d'etoffer à nouveau mon PortFolio !</p>
+      <p class="text-center text-[1rem] md:text-[1.1rem] lg:text-[1.2rem] xl:text-[1.3rem] m-12 max-w-2xl mx-auto">Les entreprises <strong>Câlins d'Anges et oDouceurDeJulie</strong>, qui évoluaient dans le secteur du bien-être des nouveau-nés, ont malheureusement dû mettre fin à leurs activités. Plusieurs nouveaux projets sont actuellement en développement et viendront enrichir mon portfolio prochainement.</p>
     </div>
   </div>
 </template>
