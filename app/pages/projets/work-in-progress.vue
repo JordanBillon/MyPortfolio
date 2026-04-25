@@ -9,6 +9,19 @@ useHead({
     }
   ]
 })
+
+const projects = [
+  {
+    title: "Oméga CBD",
+    description:
+      "Site e-commerce de vente de fleur de CBD.",
+    imgSrc: "/images/omegacbd.webp",
+    imgAlt: "Oméga CBD",
+    href: "https://omegacbd.fr",
+    tags: [{ label: "SEO" }, { label: "e-commerce" }],
+    offline: false,
+  },
+]
 </script>
 
 
@@ -22,10 +35,21 @@ useHead({
       fetchpriority="high"
       loading="eager"
     />
-    <h1 class="text-4xl font-bold mb-10 text-center">Projets en cours 🚧</h1>
+
+    <div class="relative z-10">
+      <h1 class="text-4xl font-bold mb-10 text-center">Projets en cours 🚧</h1>
     <p class="text-center text-gray-300 mb-10">
       Voici mes projets sur lesquels je travaille actuellement.
     </p>
+
+      <div class="grid place-items-center grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-20 gap-10 max-w-6xl mx-auto">
+        <ProjectCard
+          v-for="p in projects"
+          :key="p.title"
+          v-bind="p"
+        />
+      </div> 
+    </div>
   </div>
 </template>
 

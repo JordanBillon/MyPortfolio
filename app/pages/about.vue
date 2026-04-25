@@ -164,6 +164,7 @@ const frontTechs = [
   { name: "JavaScript", icon: "/images/js.png" },
   { name: "Vue.js", icon: "/images/vue.png" },
   { name: "Nuxt", icon: "/images/nuxt.png" },
+  { name: "Angular", icon: "/images/angular.png" },
   { name: "TailwindCSS", icon: "/images/tailwind.png" },
 ]
 
