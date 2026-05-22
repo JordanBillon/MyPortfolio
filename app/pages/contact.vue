@@ -76,11 +76,11 @@ useHead({
 
     <!-- Bloc réseaux -->
     <div class="relative z-10 max-w-3xl w-full text-center mb-12">
-      <h1
+      <h2
         class="font-bold mb-6 text-[1.4rem] sm:text-[1.6rem] md:text-[1.8rem] lg:text-[2rem] xl:text-[2.2rem]"
       >
         Pour suivre l'avancée de mes projets, n'hésitez pas à me suivre !
-      </h1>
+      </h2>
 
       <p
         class="text-gray-200 mb-12 text-base md:text-lg max-w-2xl mx-auto leading-relaxed"
@@ -92,10 +92,11 @@ useHead({
       <div class="flex flex-col items-center gap-8">
         <!-- LinkedIn -->
         <div class="w-full max-w-[400px]">
-          <a 
-            href="https://linkedin.com/in/jordan-billon" 
+          <a
+            href="https://linkedin.com/in/jordan-billon"
             target="_blank"
-            class="flex items-center gap-4 bg-white/10 backdrop-blur-lg p-6 rounded-lg shadow-lg 
+            rel="noopener noreferrer"
+            class="flex items-center gap-4 bg-white/10 backdrop-blur-lg p-6 rounded-lg shadow-lg
                    hover:scale-105 hover:bg-white/20 transition-all duration-200"
           >
             <NuxtImg src="/images/linkedin.png" alt="Logo LinkedIn" class="w-12 h-12" />
@@ -108,10 +109,11 @@ useHead({
 
         <!-- GitHub -->
         <div class="w-full max-w-[400px]">
-          <a 
-            href="https://github.com/JordanBillon" 
+          <a
+            href="https://github.com/JordanBillon"
             target="_blank"
-            class="flex items-center gap-4 bg-white/10 backdrop-blur-lg p-6 rounded-lg shadow-lg 
+            rel="noopener noreferrer"
+            class="flex items-center gap-4 bg-white/10 backdrop-blur-lg p-6 rounded-lg shadow-lg
                    hover:scale-105 hover:bg-white/20 transition-all duration-200"
           >
             <NuxtImg src="/images/github.png" alt="Logo GitHub" class="w-12 h-12"/>

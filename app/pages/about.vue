@@ -38,7 +38,6 @@
             src="/images/diplome.png"
             alt="Diplôme"
             class="w-20 md:w-28 h-auto opacity-90"
-            @click="showDiploma = true"
           />
         </div>
 

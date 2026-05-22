@@ -31,22 +31,22 @@ useHead({
         </h2>
 
         <div class="inline-block mx-auto max-w-4xl bg-white/10 backdrop-blur-md rounded-2xl px-4 sm:px-8 md:px-10 py-6 sm:py-8 md:py-10 shadow-lg mb-16 md:mb-20 xl:mb-24 border border-white/10">
-          <p class="text-gray-100 leading-relaxed sm:leading-loose text-[0.90rem] sm:text-base md:text-lg">
-            Vous trouverez ici mes projets terminés, ceux en cours de construction, et un aperçu de qui je suis ainsi que de mon parcours.<br><br>
-            Le site évoluera régulièrement au fil de mes idées et de mes nouvelles réalisations.<br><br>
-            Ce site reflète mon parcours, mes projets et la passion que je mets dans chaque création.
-          </p>
+          <div class="text-gray-100 leading-relaxed sm:leading-loose text-[0.90rem] sm:text-base md:text-lg space-y-4">
+            <p>Vous trouverez ici mes projets terminés, ceux en cours de construction, et un aperçu de qui je suis ainsi que de mon parcours.</p>
+            <p>Le site évoluera régulièrement au fil de mes idées et de mes nouvelles réalisations.</p>
+            <p>Ce site reflète mon parcours, mes projets et la passion que je mets dans chaque création.</p>
+          </div>
         </div>  
 
         <h2 class="text-[1.2rem] sm:text-[1.4rem] md:text-[1.6rem] lg:text-[1.8rem] xl:text-[2rem] font-bold mb-6 text-white">
           Un projet en tête ? Vous êtes une entreprise ?
         </h2><br>
 
-        <p class="text-gray-300 mb-16 text-[0.90rem] sm:text-base md:text-lg">
-          Disponible dès maintenant, je suis à la recherche d’opportunités dans la région toulousaine.<br><br>
-          Mon profil full stack me permet d’intervenir aussi bien sur le front-end (HTML, VueJS, TailwindCSS) que sur le back-end (Symfony PHP).<br><br>
-          Je serais ravi d’échanger autour de vos besoins ou projets web.
-        </p>
+        <div class="text-gray-300 mb-16 text-[0.90rem] sm:text-base md:text-lg space-y-4">
+          <p>Disponible dès maintenant, je suis à la recherche d’opportunités dans la région toulousaine.</p>
+          <p>Mon profil full stack me permet d’intervenir aussi bien sur le front-end (HTML, VueJS, TailwindCSS) que sur le back-end (Symfony PHP).</p>
+          <p>Je serais ravi d’échanger autour de vos besoins ou projets web.</p>
+        </div>
 
         <NuxtLink
           to="/contact"

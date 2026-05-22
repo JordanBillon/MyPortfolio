@@ -1,13 +1,6 @@
 <script setup>
-import { ref, onMounted, onBeforeUnmount } from 'vue'
-import { useRoute } from 'vue-router'
-
-const route = useRoute()
 const isMenuOpen = ref(false)
 
-function openMenu() {
-  isMenuOpen.value = true
-}
 function closeMenu() {
   isMenuOpen.value = false
 }
@@ -42,38 +35,29 @@ onBeforeUnmount(() => {
         Jordan Billon Concepteur Développeur Web Full Stack
       </h2>
 
-      <!-- NAV DESKTOP (>= lg) : on garde ton logic d'active via route -->
       <nav class="hidden md:flex items-center space-x-12">
-        <NuxtLink 
+        <NuxtLink
           to="/"
-          :class="[
-            'hover:underline hover:scale-110 transition-transform duration-200',
-            route.path === '/' ? 'text-pink-400 font-bold' : ''
-          ]"
+          class="hover:underline hover:scale-110 transition-transform duration-200"
+          exact-active-class="text-pink-400 font-bold"
         >Accueil</NuxtLink>
 
-        <NuxtLink 
+        <NuxtLink
           to="/projets"
-          :class="[
-            'hover:underline hover:scale-110 transition-transform duration-200',
-            route.path.startsWith('/projets') ? 'text-pink-400 font-bold' : ''
-          ]"
+          class="hover:underline hover:scale-110 transition-transform duration-200"
+          active-class="text-pink-400 font-bold"
         >Mes Projets</NuxtLink>
 
-        <NuxtLink 
+        <NuxtLink
           to="/contact"
-          :class="[
-            'hover:underline hover:scale-110 transition-transform duration-200',
-            route.path === '/contact' ? 'text-pink-400 font-bold' : ''
-          ]"
+          class="hover:underline hover:scale-110 transition-transform duration-200"
+          exact-active-class="text-pink-400 font-bold"
         >Contact</NuxtLink>
 
-        <NuxtLink 
+        <NuxtLink
           to="/about"
-          :class="[
-            'hover:underline hover:scale-110 transition-transform duration-200',
-            route.path === '/about' ? 'text-pink-400 font-bold' : ''
-          ]"
+          class="hover:underline hover:scale-110 transition-transform duration-200"
+          exact-active-class="text-pink-400 font-bold"
         >About me</NuxtLink>
       </nav>
 
@@ -102,8 +86,9 @@ onBeforeUnmount(() => {
       id="side-menu"
       class="fixed top-0 left-0 h-full w-72 max-w-[85vw] bg-gradient-radial text-center from-[#2f1491] to-[#030005] text-white z-50 transform transition-transform duration-300 shadow-xl"
       :class="isMenuOpen ? 'translate-x-0' : '-translate-x-full'"
-      role="complementary"
-      aria-label="Menu latéral de navigation"
+      role="dialog"
+      :aria-modal="isMenuOpen"
+      aria-label="Menu de navigation"
     >
       <!-- Header du drawer -->
       <div class="relative flex items-center justify-center px-5 pt-5 pb-6 border-b border-white/10">
@@ -128,28 +113,28 @@ onBeforeUnmount(() => {
         <NuxtLink
           to="/"
           class="px-4 py-4 hover:bg-white/10"
-          :class="route.path === '/' ? 'bg-white/10 text-pink-300' : ''"
+          exact-active-class="bg-white/10 text-pink-300"
           @click="closeMenu"
         >Accueil</NuxtLink>
 
         <NuxtLink
           to="/projets"
           class="px-4 py-4 hover:bg-white/10"
-          :class="route.path.startsWith('/projets') ? 'bg-white/10 text-pink-300' : ''"
+          active-class="bg-white/10 text-pink-300"
           @click="closeMenu"
         >Mes Projets</NuxtLink>
 
         <NuxtLink
           to="/contact"
           class="px-4 py-4 hover:bg-white/10"
-          :class="route.path === '/contact' ? 'bg-white/10 text-pink-300' : ''"
+          exact-active-class="bg-white/10 text-pink-300"
           @click="closeMenu"
         >Contact</NuxtLink>
 
         <NuxtLink
           to="/about"
           class="px-4 py-4 hover:bg-white/10"
-          :class="route.path === '/about' ? 'bg-white/10 text-pink-300' : ''"
+          exact-active-class="bg-white/10 text-pink-300"
           @click="closeMenu"
         >About me</NuxtLink>
       </nav>

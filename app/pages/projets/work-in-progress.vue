@@ -42,7 +42,7 @@ const projects = [
       Voici mes projets sur lesquels je travaille actuellement.
     </p>
 
-      <div class="grid place-items-center grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-20 gap-10 max-w-6xl mx-auto">
+      <div class="flex flex-wrap justify-center gap-y-20 gap-10 max-w-6xl mx-auto">
         <ProjectCard
           v-for="p in projects"
           :key="p.title"
