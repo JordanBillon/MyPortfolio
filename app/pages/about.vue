@@ -1,8 +1,7 @@
 <template>
   <div class="bg-gradient-radial from-[#2f1491] to-[#030005] min-h-screen relative overflow-hidden text-white">
-    <!-- Image de fond -->
     <NuxtImg
-      src="/images/bureau.png"
+      src="/images/bureau.webp"
       alt="Fond tech"
       class="absolute inset-0 w-full h-full object-cover opacity-30 pointer-events-none"
     />
