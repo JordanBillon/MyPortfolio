@@ -26,7 +26,7 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-    <header class="w-full h-[120px] bg-gradient-radial from-[#2f1491] to-[#030005] text-white shadow-lg">
+    <header class="fixed top-0 left-0 z-30 w-full h-[120px] bg-gradient-radial from-[#2f1491] to-[#030005] text-white shadow-lg">
     <div class="mx-auto flex items-center justify-around h-full px-4">
       <!-- Logo -->
       <NuxtImg src="/images/logo.png" alt="Logo JB" class="h-[90px] w-[100px] md:h-[113px] md:w-[126px]" />
