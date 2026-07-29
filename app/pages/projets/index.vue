@@ -36,12 +36,12 @@ usePageSeo({
       </NuxtLink>
 
       <NuxtLink to="/projets/work-in-progress">
+        <!-- Source en 600x900 : pas de width/height, on laisse object-cover
+             recadrer côté CSS comme avant, sans recadrage supplémentaire d'IPX. -->
         <NuxtImg
           src="/images/wip2.png"
           alt="Projets en cours"
           preset="illustration"
-          width="220"
-          height="260"
           class="w-[180px] h-[210px] md:w-[200px] md:h-[230px] lg:w-[220px] lg:h-[250px] xl:w-[220px] xl:h-[260px]
                 object-cover transition-transform duration-300 hover:scale-110 rounded-lg cursor-pointer"
         />

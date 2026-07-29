@@ -1,4 +1,6 @@
-export const SITE_URL = 'https://jordanbillon.fr'
+// Avec le www : jordanbillon.fr redirige (307) vers www.jordanbillon.fr.
+// Une URL canonique doit pointer vers l'adresse finale, pas vers une redirection.
+export const SITE_URL = 'https://www.jordanbillon.fr'
 export const SITE_NAME = 'Jordan Billon'
 export const SITE_OG_IMAGE = '/images/og-image.png'
 

@@ -124,13 +124,17 @@ const skillGroups = [
               :key="tech.name"
               class="flex flex-col items-center text-center"
             >
+              <!--
+                Pas de width/height ici : les logos n'ont pas tous le même
+                format (nuxt.png est en 4:1, php.png en 1.9:1). Forcer un
+                carré les ferait recadrer par IPX. La taille est fixée par
+                les classes CSS, donc pas de décalage de mise en page.
+              -->
               <NuxtImg
                 :src="tech.icon"
                 alt=""
                 aria-hidden="true"
                 preset="icon"
-                width="80"
-                height="80"
                 loading="lazy"
                 class="object-contain mb-2 w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20"
               />
