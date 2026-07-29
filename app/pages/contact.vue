@@ -19,6 +19,13 @@ const socials = [
     href: 'https://github.com/JordanBillon',
     icon: '/images/github.png',
   },
+  {
+    name: 'Fiverr',
+    handle: 'fr.fiverr.com/jordan_billon',
+    // La barre finale est nécessaire : sans elle, Fiverr redirige vers l'accueil.
+    href: 'https://fr.fiverr.com/jordan_billon/',
+    icon: '/images/fiverr.png',
+  },
 ]
 
 const CARD_BASE =
@@ -118,7 +125,8 @@ const contactMethods = [
       </h2>
 
       <p class="text-gray-200 mb-12 text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
-        Je partage mes projets et mon parcours sur ces réseaux.
+        Je partage mes projets et mon parcours sur ces plateformes. Vous pouvez également
+        faire appel à moi en freelance via Fiverr.
       </p>
 
       <!-- Cartes réseaux -->
@@ -140,16 +148,6 @@ const contactMethods = [
           </a>
         </div>
 
-        <!-- X (pas encore actif) -->
-        <div class="w-full max-w-[400px]">
-          <div :class="CARD_BASE" class="opacity-70 cursor-not-allowed">
-            <NuxtImg src="/images/x.png" alt="" aria-hidden="true" preset="icon" width="48" height="48" loading="lazy" class="w-12 h-12" />
-            <div class="flex-1 flex flex-col items-center justify-center">
-              <h3 class="text-lg md:text-xl font-semibold text-center">X</h3>
-              <p class="text-gray-400 italic text-sm md:text-base">Bientôt...</p>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </section>

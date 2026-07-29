@@ -51,9 +51,40 @@ const projects = [
         />
       </div>
 
-      <p class="text-center text-[1rem] md:text-[1.1rem] lg:text-[1.2rem] xl:text-[1.3rem] m-12 max-w-2xl mx-auto">
-        L'entreprise <strong>Câlins d'Anges</strong>, qui évoluait dans le secteur du bien-être des nouveau-nés, a depuis mis fin à son activité : le site n'est donc plus accessible en ligne. Plusieurs nouveaux projets sont actuellement en développement et viendront enrichir mon portfolio prochainement.
-      </p>
+      <!--
+        Note de contexte : volontairement discrète et alignée à gauche, pour
+        qu'elle se lise comme une précision et non comme un bloc concurrent
+        des cartes projets.
+      -->
+      <aside
+        class="max-w-2xl mx-auto mt-16 mb-4 flex items-start gap-4 text-left
+               bg-white/5 backdrop-blur-sm border border-white/10 border-l-4 border-l-pink-500
+               rounded-xl px-5 py-5 sm:px-6 sm:py-6"
+      >
+        <svg
+          class="w-5 h-5 shrink-0 mt-0.5 text-pink-400"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+          aria-hidden="true"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+            clip-rule="evenodd"
+          />
+        </svg>
+
+        <div class="space-y-2 text-sm sm:text-base leading-relaxed">
+          <p class="text-gray-300">
+            <strong class="text-white font-semibold">Câlins d'Anges</strong> évoluait dans le bien-être
+            périnatal à Toulouse. L'entreprise a depuis cessé son activité, le site n'est donc plus
+            accessible en ligne.
+          </p>
+          <p class="text-gray-400">
+            D'autres projets sont en cours de développement et viendront enrichir cette page.
+          </p>
+        </div>
+      </aside>
     </div>
   </div>
 </template>
