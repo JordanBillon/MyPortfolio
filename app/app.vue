@@ -14,7 +14,9 @@ useHead({
           'Développeur web full stack basé à Toulouse, ancien militaire des commandos de l\'air reconverti dans le développement.',
         url: SITE_URL,
         image: `${SITE_URL}${SITE_OG_IMAGE}`,
-        email: 'jordan-billon@hotmail.fr',
+        // Pas de champ `email` ici : le JSON-LD est un format conçu pour être
+        // lu par des machines, donc trivial à aspirer. L'adresse reste
+        // visible et cliquable sur la page contact, ce qui suffit.
         address: {
           '@type': 'PostalAddress',
           addressLocality: 'Toulouse',

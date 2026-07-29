@@ -23,6 +23,28 @@ const socials = [
 
 const CARD_BASE =
   'flex items-center gap-4 bg-white/10 backdrop-blur-lg p-6 rounded-lg shadow-lg transition-all duration-200'
+
+const CARD_SIZE = 'w-full md:w-[360px] lg:w-[380px] max-w-[400px]'
+
+/*
+ * Le numéro de téléphone n'est écrit nulle part en clair : il est reconstruit
+ * dans le navigateur à partir de codes de caractères, et le bloc est encapsulé
+ * dans <ClientOnly> pour qu'il soit absent du HTML pré-généré.
+ *
+ * Les aspirateurs de numéros lisent le HTML brut sans exécuter de JavaScript :
+ * ils ne trouvent donc rien. Ça n'arrête pas un robot qui exécute du JS.
+ */
+const PHONE_CODES = [51, 51, 54, 52, 49, 57, 52, 48, 52, 48, 49]
+const phoneDigits = PHONE_CODES.map(c => String.fromCharCode(c)).join('')
+const phoneHref = `tel:+${phoneDigits}`
+const phoneDisplay = [
+  phoneDigits.slice(0, 2),
+  phoneDigits.slice(2, 3),
+  phoneDigits.slice(3, 5),
+  phoneDigits.slice(5, 7),
+  phoneDigits.slice(7, 9),
+  phoneDigits.slice(9, 11),
+].join(' ').replace(/^/, '+')
 </script>
 
 <template>
@@ -44,18 +66,31 @@ const CARD_BASE =
 
       <!-- Bloc contacts -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center">
-        <!-- Téléphone -->
-        <a
-          href="tel:+33641940401"
-          :class="CARD_BASE"
-          class="hover:scale-105 hover:bg-white/20 w-full md:w-[360px] lg:w-[380px] max-w-[400px]"
-        >
-          <NuxtImg src="/images/phone.png" alt="" aria-hidden="true" preset="icon" width="48" height="48" class="w-12 h-12" />
-          <div class="flex-1 flex flex-col items-center justify-center">
-            <h2 class="text-lg md:text-xl font-semibold">Téléphone</h2>
-            <p class="text-gray-300 text-sm md:text-base">+33 6 41 94 04 01</p>
-          </div>
-        </a>
+        <!-- Téléphone : rendu uniquement côté navigateur (anti-aspiration) -->
+        <ClientOnly>
+          <a
+            :href="phoneHref"
+            :class="[CARD_BASE, CARD_SIZE]"
+            class="hover:scale-105 hover:bg-white/20"
+          >
+            <NuxtImg src="/images/phone.png" alt="" aria-hidden="true" preset="icon" width="48" height="48" class="w-12 h-12" />
+            <div class="flex-1 flex flex-col items-center justify-center">
+              <h2 class="text-lg md:text-xl font-semibold">Téléphone</h2>
+              <p class="text-gray-300 text-sm md:text-base">{{ phoneDisplay }}</p>
+            </div>
+          </a>
+
+          <!-- Affiché le temps que le JavaScript prenne la main -->
+          <template #fallback>
+            <div :class="[CARD_BASE, CARD_SIZE]">
+              <NuxtImg src="/images/phone.png" alt="" aria-hidden="true" preset="icon" width="48" height="48" class="w-12 h-12" />
+              <div class="flex-1 flex flex-col items-center justify-center">
+                <h2 class="text-lg md:text-xl font-semibold">Téléphone</h2>
+                <p class="text-gray-400 text-sm md:text-base">Chargement…</p>
+              </div>
+            </div>
+          </template>
+        </ClientOnly>
 
         <!-- Email -->
         <a
