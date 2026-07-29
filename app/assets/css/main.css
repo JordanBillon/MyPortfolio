@@ -1,0 +1,33 @@
+/* Styles globaux du site. Tailwind est injecté par le module @nuxtjs/tailwindcss. */
+
+/* Ancrage doux pour les liens internes, en tenant compte de l'en-tête fixe. */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 120px;
+}
+
+/* Anneau de focus visible au clavier uniquement (pas au clic souris). */
+:focus-visible {
+  outline: 2px solid #f472b6;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/*
+ * Respecte le réglage système « réduire les animations ».
+ * Les bandes dégradées animées de l'accueil tournent en boucle infinie :
+ * c'est un déclencheur connu pour les troubles vestibulaires.
+ */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,32 +1,29 @@
-<script setup>
-const props = defineProps({
-  error: Object
-})
+<script setup lang="ts">
+import type { NuxtError } from '#app'
+
+const props = defineProps<{ error: NuxtError }>()
+
+const isNotFound = computed(() => props.error?.statusCode === 404)
 
 useHead({
-  title: 'Erreur | Jordan Billon'
+  title: isNotFound.value ? 'Page introuvable' : 'Une erreur est survenue',
+  meta: [{ name: 'robots', content: 'noindex' }],
 })
 
 const handleError = () => clearError({ redirect: '/' })
 </script>
 
 <template>
-  <div class="relative min-h-screen bg-gradient-radial from-[#2f1491] to-[#030005] text-white flex items-center justify-center px-6">
-    <NuxtImg
-      src="/images/projet-image.png"
-      alt="Fond tech"
-      class="absolute inset-0 w-full h-full object-cover opacity-15 z-0"
-      fetchpriority="high"
-      loading="eager"
-    />
+  <div class="relative min-h-screen bg-gradient-radial from-brand-purple to-brand-dark text-white flex items-center justify-center px-6">
+    <PageBackground src="/images/projet-image.png" priority />
 
     <div class="relative z-10 text-center max-w-xl">
       <p class="text-8xl font-bold text-pink-400 mb-6">{{ error?.statusCode }}</p>
       <h1 class="text-2xl md:text-3xl font-bold mb-4">
-        {{ error?.statusCode === 404 ? 'Page introuvable' : 'Une erreur est survenue' }}
+        {{ isNotFound ? 'Page introuvable' : 'Une erreur est survenue' }}
       </h1>
       <p class="text-gray-300 mb-10">
-        {{ error?.statusCode === 404
+        {{ isNotFound
           ? "La page que vous cherchez n'existe pas ou a été déplacée."
           : "Quelque chose s'est mal passé. Revenez à l'accueil." }}
       </p>

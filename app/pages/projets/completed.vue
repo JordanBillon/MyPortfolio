@@ -1,58 +1,48 @@
-<script setup>
-useHead({
-  title: 'Mes Projets terminés | Portfolio Développeur Web Full Stack',
-  meta: [
-    {
-      name: 'description',
-      content:
-        "Explorez mes projets terminés : sites webs, blog,  optimisation SEO."
-    }
-  ]
+<script setup lang="ts">
+usePageSeo({
+  title: 'Projets terminés',
+  description:
+    'Mes réalisations livrées : sites vitrines optimisés SEO pour des entreprises locales à Toulouse, avec blog et quiz sur mesure.',
+  path: '/projets/completed',
 })
 
 const projects = [
   {
-    title: "Ô Douceur de Julie",
+    title: 'Ô Douceur de Julie',
     description:
-      "Site vitrine pour des ateliers bien-être bébé. Optimisé SEO pour capter une audience locale qualifiée.",
-    imgSrc: "/images/odouceurdejulie.png",
-    imgAlt: "Ô Douceur de Julie",
-    href: "https://odouceurdejulie.fr",
-    tags: [{ label: "SEO" }, { label: "Local" }, { label: "Vitrine" }],
+      'Site vitrine pour des ateliers bien-être bébé. Optimisé SEO pour capter une audience locale qualifiée.',
+    imgSrc: '/images/odouceurdejulie.png',
+    imgAlt: 'Logo de Ô Douceur de Julie',
+    href: 'https://odouceurdejulie.fr',
+    tags: [{ label: 'SEO' }, { label: 'Local' }, { label: 'Vitrine' }],
     offline: true,
   },
   {
     title: "Juju Peint'Urt",
     description:
-      "Mise en avant web pour une entreprise de peinture intérieure & extérieure. Site vitrine optimisé SEO.",
-    imgSrc: "/images/jujupeinturt.png",
-    imgAlt: "Juju Peint'Urt",
-    href: "https://jujupeinturt.fr",
-    tags: [{ label: "SEO" }, { label: "Local" }, { label: "Vitrine" }],
+      'Mise en avant web pour une entreprise de peinture intérieure & extérieure. Site vitrine optimisé SEO.',
+    imgSrc: '/images/jujupeinturt.png',
+    imgAlt: "Logo de Juju Peint'Urt",
+    href: 'https://jujupeinturt.fr',
+    tags: [{ label: 'SEO' }, { label: 'Local' }, { label: 'Vitrine' }],
     offline: false,
   },
   {
-    title: "Câlins d’Anges",
+    title: 'Câlins d’Anges',
     description:
-      "Entreprise de bien-être périnatal à Toulouse. Site optimisé SEO avec quiz & blog. (Actuellement hors ligne)",
-    imgSrc: "/images/calinsdanges.png",
-    imgAlt: "Câlins d’Anges",
+      'Entreprise de bien-être périnatal à Toulouse. Site optimisé SEO avec quiz & blog. (Actuellement hors ligne)',
+    imgSrc: '/images/calinsdanges.png',
+    imgAlt: 'Logo de Câlins d’Anges',
     href: undefined,
-    tags: [{ label: "SEO" }, { label: "Blog" }, { label: "Quiz" }],
+    tags: [{ label: 'SEO' }, { label: 'Blog' }, { label: 'Quiz' }],
     offline: true,
   },
 ]
 </script>
 
 <template>
-  <div class="relative min-h-screen bg-gradient-to-b from-[#2f1491] to-[#030005] text-white py-20 px-6">
-    <NuxtImg
-      src="/images/projet-image.png"
-      alt="Fond tech"
-      class="absolute inset-0 w-full h-full object-cover opacity-15 z-0"
-      fetchpriority="high"
-      loading="eager"
-    />
+  <div class="relative min-h-screen bg-gradient-to-b from-brand-purple to-brand-dark text-white py-20 px-6">
+    <PageBackground src="/images/projet-image.png" priority />
 
     <div class="relative z-10">
       <h1 class="text-center font-bold mb-6 text-[2rem] md:text-[2.2rem] lg:text-[2.4rem] xl:text-[2.6rem]">
@@ -70,7 +60,9 @@ const projects = [
         />
       </div>
 
-      <p class="text-center text-[1rem] md:text-[1.1rem] lg:text-[1.2rem] xl:text-[1.3rem] m-12 max-w-2xl mx-auto">Les entreprises <strong>Câlins d'Anges et oDouceurDeJulie</strong>, qui évoluaient dans le secteur du bien-être des nouveau-nés, ont malheureusement dû mettre fin à leurs activités. Plusieurs nouveaux projets sont actuellement en développement et viendront enrichir mon portfolio prochainement.</p>
+      <p class="text-center text-[1rem] md:text-[1.1rem] lg:text-[1.2rem] xl:text-[1.3rem] m-12 max-w-2xl mx-auto">
+        Les entreprises <strong>Câlins d'Anges et Ô Douceur de Julie</strong>, qui évoluaient dans le secteur du bien-être des nouveau-nés, ont malheureusement dû mettre fin à leurs activités. Plusieurs nouveaux projets sont actuellement en développement et viendront enrichir mon portfolio prochainement.
+      </p>
     </div>
   </div>
 </template>

@@ -1,13 +1,17 @@
 <script setup lang="ts">
 type Tag = { label: string }
-const props = defineProps<{
+
+defineProps<{
   title: string
   description: string
   imgSrc: string
+  /** Description de l'image ; par défaut on retombe sur le titre du projet. */
   imgAlt?: string
   tags?: Tag[]
-  href?: string        // si présent et pas offline -> bouton "Voir le site"
-  offline?: boolean    // si true -> bouton désactivé
+  /** Lien vers le site en ligne. Ignoré si `offline` est vrai. */
+  href?: string
+  /** Si vrai, affiche un bouton désactivé « Site hors ligne ». */
+  offline?: boolean
 }>()
 </script>
 
@@ -19,10 +23,18 @@ const props = defineProps<{
   >
     <!-- Image -->
     <div class="w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 lg:w-40 lg:h-40 rounded-full overflow-hidden mb-6 shadow-lg shadow-pink-500/40">
-      <NuxtImg :src="imgSrc" :alt="title" class="w-full h-full object-cover" />
+      <NuxtImg
+        :src="imgSrc"
+        :alt="imgAlt || title"
+        preset="avatar"
+        width="160"
+        height="160"
+        loading="lazy"
+        class="w-full h-full object-cover"
+      />
     </div>
 
-    <h2 class="text-lg sm:text-xl md:text-2xl font-semibold mb-2">{{ title }}</h2>
+    <h3 class="text-lg sm:text-xl md:text-2xl font-semibold mb-2">{{ title }}</h3>
 
     <p class="text-gray-300 text-sm sm:text-base mb-4 leading-relaxed">
       {{ description }}
@@ -30,35 +42,30 @@ const props = defineProps<{
 
     <div v-if="tags?.length" class="flex flex-wrap gap-2 justify-center mb-4">
       <span
-        v-for="(t, i) in tags"
-        :key="i"
+        v-for="t in tags"
+        :key="t.label"
         class="px-2 py-1 text-[10px] sm:text-xs rounded-full bg-pink-500/20 text-pink-300"
       >
         {{ t.label }}
       </span>
     </div>
 
-    <template v-if="offline">
-      <button
-        type="button"
-        aria-disabled="true"
-        class="px-3 py-2 sm:px-4 sm:py-2 rounded-lg text-xs sm:text-sm font-semibold bg-gray-500/60 text-gray-200 cursor-not-allowed"
-        title="Site hors ligne"
-      >
-        Site hors ligne
-      </button>
-    </template>
-    <template v-else>
-      <a
-        v-if="href"
-        :href="href"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="bg-pink-500 hover:bg-pink-600 px-3 py-2 sm:px-4 sm:py-2 rounded-lg text-xs sm:text-sm font-semibold"
-      >
-        Voir le site
-      </a>
-    </template>
+    <button
+      v-if="offline"
+      type="button"
+      disabled
+      class="px-3 py-2 sm:px-4 sm:py-2 rounded-lg text-xs sm:text-sm font-semibold bg-gray-500/60 text-gray-200 cursor-not-allowed"
+    >
+      Site hors ligne
+    </button>
+    <a
+      v-else-if="href"
+      :href="href"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="bg-pink-500 hover:bg-pink-600 transition-colors duration-200 px-3 py-2 sm:px-4 sm:py-2 rounded-lg text-xs sm:text-sm font-semibold text-white"
+    >
+      Voir le site<span class="sr-only"> {{ title }} (nouvel onglet)</span>
+    </a>
   </div>
 </template>
-

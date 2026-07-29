@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-app",
+  "name": "jordanbillon-portfolio",
   "type": "module",
   "private": true,
   "scripts": {
@@ -7,6 +7,9 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
+    "typecheck": "nuxt typecheck",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
@@ -16,7 +19,12 @@
     "vue-router": "^4.5.1"
   },
   "devDependencies": {
+    "@nuxt/eslint": "^1.16.0",
     "@nuxt/fonts": "^0.11.4",
-    "@nuxtjs/tailwindcss": "^6.14.0"
+    "@nuxtjs/tailwindcss": "^6.14.0",
+    "@types/node": "^26.1.2",
+    "eslint": "^10.8.0",
+    "typescript": "^6.0.3",
+    "vue-tsc": "^3.3.8"
   }
 }
