@@ -21,7 +21,7 @@ const previewProjects = [
       id="intro"
       class="section-contact relative z-10 mx-auto pt-24 lg:pb-60 md:pb-40 pb-20 px-6 -mb-4 md:-mb-6 lg:-mb-10 2xl:-mb-14 text-center"
     >
-      <PageBackground src="/images/bg-contact.png" priority />
+      <PageBackground src="/images/bg-contact.webp" priority />
 
       <div class="relative z-20">
         <h1 class="text-[1.4rem] sm:text-[1.6rem] md:text-[1.8rem] lg:text-[2rem] xl:text-[2.25rem] font-bold text-white pb-12">
@@ -60,7 +60,7 @@ const previewProjects = [
 
     <!-- PROJETS PREVIEW -->
     <section id="projets" class="section-projets relative z-10 mx-auto pb-40 pt-40 -mt-16 lg:-mb-16 -mb-8 text-center">
-      <PageBackground src="/images/projet-image.png" />
+      <PageBackground src="/images/projet-image.webp" />
 
       <div class="relative z-20">
         <h2 class="text-[1.2rem] sm:text-[1.4rem] md:text-[1.6rem] lg:text-[1.8rem] xl:text-[2rem] font-bold mb-6 text-white">Mes Projets</h2>

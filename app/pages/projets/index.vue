@@ -9,7 +9,7 @@ usePageSeo({
 
 <template>
   <div class="relative min-h-[calc(100vh-220px)] md:min-h-[calc(100vh-180px)] flex flex-col items-center justify-start py-16 bg-gradient-radial from-brand-purple to-brand-dark">
-    <PageBackground src="/images/projet-image.png" priority />
+    <PageBackground src="/images/projet-image.webp" priority />
 
     <!-- Contenu -->
     <h1

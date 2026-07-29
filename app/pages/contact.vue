@@ -30,7 +30,7 @@ const CARD_BASE =
     class="relative min-h-[calc(100vh-120px)] flex flex-col items-center justify-center
            bg-gradient-radial from-brand-purple to-brand-dark text-white px-6 py-16"
   >
-    <PageBackground src="/images/bg-contact.png" opacity="opacity-20" priority />
+    <PageBackground src="/images/bg-contact.webp" opacity="opacity-20" priority />
 
     <!-- Bloc principal contact -->
     <div class="relative z-10 max-w-3xl w-full text-center mb-24">

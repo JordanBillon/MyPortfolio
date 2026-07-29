@@ -15,7 +15,7 @@ const handleError = () => clearError({ redirect: '/' })
 
 <template>
   <div class="relative min-h-screen bg-gradient-radial from-brand-purple to-brand-dark text-white flex items-center justify-center px-6">
-    <PageBackground src="/images/projet-image.png" priority />
+    <PageBackground src="/images/projet-image.webp" priority />
 
     <div class="relative z-10 text-center max-w-xl">
       <p class="text-8xl font-bold text-pink-400 mb-6">{{ error?.statusCode }}</p>

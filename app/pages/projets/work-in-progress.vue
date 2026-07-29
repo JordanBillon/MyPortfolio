@@ -21,7 +21,7 @@ const projects = [
 
 <template>
   <div class="relative min-h-screen bg-gradient-radial from-brand-purple to-brand-dark text-white py-20 px-6">
-    <PageBackground src="/images/projet-image.png" priority />
+    <PageBackground src="/images/projet-image.webp" priority />
 
     <div class="relative z-10">
       <h1 class="text-center font-bold mb-6 text-[2rem] md:text-[2.2rem] lg:text-[2.4rem] xl:text-[2.6rem]">
