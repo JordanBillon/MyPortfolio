@@ -8,22 +8,13 @@ usePageSeo({
 
 const projects = [
   {
-    title: 'Ô Douceur de Julie',
-    description:
-      'Site vitrine pour des ateliers bien-être bébé. Optimisé SEO pour capter une audience locale qualifiée.',
-    imgSrc: '/images/odouceurdejulie.png',
-    imgAlt: 'Logo de Ô Douceur de Julie',
-    href: 'https://odouceurdejulie.fr',
-    tags: [{ label: 'SEO' }, { label: 'Local' }, { label: 'Vitrine' }],
-    offline: true,
-  },
-  {
     title: "Juju Peint'Urt",
     description:
       'Mise en avant web pour une entreprise de peinture intérieure & extérieure. Site vitrine optimisé SEO.',
     imgSrc: '/images/jujupeinturt.png',
     imgAlt: "Logo de Juju Peint'Urt",
     href: 'https://jujupeinturt.fr',
+    repo: 'https://github.com/JordanBillon/Juju-Peint-Urt',
     tags: [{ label: 'SEO' }, { label: 'Local' }, { label: 'Vitrine' }],
     offline: false,
   },
@@ -61,7 +52,7 @@ const projects = [
       </div>
 
       <p class="text-center text-[1rem] md:text-[1.1rem] lg:text-[1.2rem] xl:text-[1.3rem] m-12 max-w-2xl mx-auto">
-        Les entreprises <strong>Câlins d'Anges et Ô Douceur de Julie</strong>, qui évoluaient dans le secteur du bien-être des nouveau-nés, ont malheureusement dû mettre fin à leurs activités. Plusieurs nouveaux projets sont actuellement en développement et viendront enrichir mon portfolio prochainement.
+        L'entreprise <strong>Câlins d'Anges</strong>, qui évoluait dans le secteur du bien-être des nouveau-nés, a depuis mis fin à son activité : le site n'est donc plus accessible en ligne. Plusieurs nouveaux projets sont actuellement en développement et viendront enrichir mon portfolio prochainement.
       </p>
     </div>
   </div>

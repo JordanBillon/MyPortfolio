@@ -10,6 +10,8 @@ defineProps<{
   tags?: Tag[]
   /** Lien vers le site en ligne. Ignoré si `offline` est vrai. */
   href?: string
+  /** Lien vers le dépôt GitHub. Le bouton « Voir le code » n'apparaît que s'il est renseigné. */
+  repo?: string
   /** Si vrai, affiche un bouton désactivé « Site hors ligne ». */
   offline?: boolean
 }>()
@@ -50,22 +52,45 @@ defineProps<{
       </span>
     </div>
 
-    <button
-      v-if="offline"
-      type="button"
-      disabled
-      class="px-3 py-2 sm:px-4 sm:py-2 rounded-lg text-xs sm:text-sm font-semibold bg-gray-500/60 text-gray-200 cursor-not-allowed"
-    >
-      Site hors ligne
-    </button>
-    <a
-      v-else-if="href"
-      :href="href"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="bg-pink-500 hover:bg-pink-600 transition-colors duration-200 px-3 py-2 sm:px-4 sm:py-2 rounded-lg text-xs sm:text-sm font-semibold text-white"
-    >
-      Voir le site<span class="sr-only"> {{ title }} (nouvel onglet)</span>
-    </a>
+    <div class="mt-auto flex flex-wrap items-center justify-center gap-3">
+      <button
+        v-if="offline"
+        type="button"
+        disabled
+        class="px-3 py-2 sm:px-4 sm:py-2 rounded-lg text-xs sm:text-sm font-semibold bg-gray-500/60 text-gray-200 cursor-not-allowed"
+      >
+        Site hors ligne
+      </button>
+      <a
+        v-else-if="href"
+        :href="href"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="bg-pink-500 hover:bg-pink-600 transition-colors duration-200 px-3 py-2 sm:px-4 sm:py-2 rounded-lg text-xs sm:text-sm font-semibold text-white"
+      >
+        Voir le site<span class="sr-only"> {{ title }} (nouvel onglet)</span>
+      </a>
+
+      <a
+        v-if="repo"
+        :href="repo"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-2 border border-white/30 hover:border-white/60 hover:bg-white/10
+               transition-colors duration-200 px-3 py-2 sm:px-4 sm:py-2 rounded-lg text-xs sm:text-sm font-semibold text-white"
+      >
+        <NuxtImg
+          src="/images/github.png"
+          alt=""
+          aria-hidden="true"
+          preset="icon"
+          width="16"
+          height="16"
+          loading="lazy"
+          class="w-4 h-4"
+        />
+        Voir le code<span class="sr-only"> de {{ title }} (nouvel onglet)</span>
+      </a>
+    </div>
   </div>
 </template>

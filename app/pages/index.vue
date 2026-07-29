@@ -8,7 +8,6 @@ usePageSeo({
 
 const previewProjects = [
   { name: "Juju Peint'Urt", image: '/images/jujupeinturt.png' },
-  { name: 'Ô Douceur de Julie', image: '/images/odouceurdejulie.png' },
   { name: "Câlins d'Anges", image: '/images/calinsdanges.png' },
 ]
 </script>

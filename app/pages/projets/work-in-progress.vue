@@ -13,6 +13,7 @@ const projects = [
     imgSrc: '/images/omegacbd.webp',
     imgAlt: 'Logo de Oméga CBD',
     href: 'https://omegacbd.fr',
+    repo: 'https://github.com/JordanBillon/OmegaCBD',
     tags: [{ label: 'SEO' }, { label: 'e-commerce' }],
     offline: false,
   },
